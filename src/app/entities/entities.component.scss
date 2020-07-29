@@ -1,0 +1,47 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+:host {
+  margin: 32px 0 0 0;
+}
+
+mat-card {
+  position: relative;
+  max-width: 386px;
+  margin-bottom: 24px;
+
+  .entity-image {
+    object-fit: cover;
+    height: 298px;
+  }
+
+  .entity-rating {
+    position: absolute;
+    right: 24px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    
+  }
+}
+
+@media only screen and (min-width: 301px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    
+  }
+}
+
+.grid-container > div {
+  text-align: center;
+}

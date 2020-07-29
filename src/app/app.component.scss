@@ -1,0 +1,22 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  svg {
+    width: 120px;
+    height: 24px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  width: 100%;
+  max-width: 1220px;
+  margin: auto;
+}

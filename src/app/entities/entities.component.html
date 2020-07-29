@@ -1,0 +1,17 @@
+<div class="grid-container">
+<mat-card
+  *ngFor="let entity of entities">
+ <div class="`item{entity.uuid}`">
+  <mat-card-header>
+    <mat-card-title>{{ entity.name }}</mat-card-title>
+    <mat-card-subtitle>{{ entity.type }}</mat-card-subtitle>
+    <span class="entity-rating">{{ entity.rating }}</span>
+  </mat-card-header>
+  <img
+    mat-card-image
+    [src]="entity.image"
+    class="entity-image">
+  </div>
+</mat-card>
+
+</div>
